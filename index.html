@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1 class="main__title h1">Создание заявки</h1>
+      <div class="form__container">
+        <div class="forms__left">
+          <div class="partner">
+            <h2 class="partner__title">Партнер</h2>
+            <div class="partner__buttons">
+              <button class="choose-partner btn btn-primary main-btn">ВЫБРАТЬ ПАРТНЕРА</button>
+              <button class="create-partner btn create-btn">+ СОЗДАТЬ</button>
+            </div>
+            <form action="" class="partner__forms __forms">
+              <div class="form__item">
+                <label for="select">Выбранный партнер</label>
+                <input class="__input" type="text" name="" id="select" />
+              </div>
+              <div class="form__item">
+                <label for="city">Город партнера</label>
+                <input class="__input" type="text" name="" id="city" />
+              </div>
+              <div class="form__item">
+                <label for="status">Статус партнера</label>
+                <input class="__input" type="text" name="" id="status" />
+              </div>
+              <div class="cencel">
+                <img src="img/icons/close.svg" alt="" class="cencel__btn" />
+              </div>
+            </form>
+            <div class="partner__cencel"></div>
+          </div>
+          <div class="object">
+            <h2 class="object__title">Объект</h2>
+            <div class="object__buttons">
+              <button class="choose-object btn btn-primary main-btn">ВЫБРАТЬ ОБЬЕКТ</button>
+              <button class="create-object btn create-btn">+ СОЗДАТЬ</button>
+            </div>
+
+            <form action="" class="object__forms __forms">
+              <div class="form__item">
+                <label for="name">Название объекта</label>
+                <input class="__input object__input" type="text" name="" id="name" />
+              </div>
+              <div class="form__item">
+                <label for="adress">Адрес объекта</label>
+                <input class="__input object__input" type="text" name="" id="adress" />
+              </div>
+              <div class="form__item">
+                <label for="number">ИНН объекта</label>
+                <input class="__input object__input" type="text" name="" id="number" />
+              </div>
+              <div class="form__item">
+                <label for="time">Время работы</label>
+                <input class="__input object__input" type="text" name="" id="time" />
+              </div>
+              <div class="cencel">
+                <img src="img/icons/close.svg" alt="" class="cencel__btn" />
+              </div>
+            </form>
+            <form action="" class="object__forms __forms">
+              <div class="form__item">
+                <label for="dir">Директор</label>
+                <input class="__input object__input _dir" type="text" name="" id="dir" />
+              </div>
+            </form>
+            <form action="" class="object__forms __forms">
+              <div class="form__item">
+                <label for="face">Контактное лицо</label>
+                <input class="__input object__input" type="text" name="" id="face" />
+              </div>
+              <div class="form__item">
+                <label for="tel">Телефон</label>
+                <input class="__input object__input" type="text" name="" id="tel" />
+              </div>
+              <div class="form__item">
+                <label for="position">Должность</label>
+                <input class="__input object__input" type="text" name="" id="position" />
+              </div>
+            </form>
+          </div>
+          <div class="discription">
+            <h2 class="partner__title">Описание заявки</h2>
+            <div class="input_row">
+              <div class="form__item">
+                <label for="type">Тип заявки</label>
+                <select class="form-select __input" aria-label="Тип заявки" id="type">
+                  <option selected>Выберите тип заявки</option>
+                  <option value="1">Первая</option>
+                  <option value="2">Вторая</option>
+                  <option value="3">Третья</option>
+                </select>
+              </div>
+            </div>
+            <div class="input_row">
+              <div class="form__item start">
+                <label for="start">Дата</label>
+                <input class="date __input" type="date" name="" id="start" value="2021-03-22" min="2021-01-01" max="2070-12-31" />
+              </div>
+              <div class="form__item end">
+                <label for="end">Срок окончания</label>
+                <input class="date __input" type="date" name="" id="end" value="2021-03-22" min="2021-01-01" max="2070-12-31" />
+              </div>
+            </div>
+            <div class="input_row">
+              <div class="form__item adress">
+                <label for="obj_adress">Адрес объекта</label>
+                <input type="text" class="obj__adress __input" id="obj_adress" />
+              </div>
+            </div>
+            <div class="input_row">
+              <div class="form__item theme">
+                <label for="theme">тема</label>
+                <input type="text" class="theme __input" id="theme" />
+              </div>
+            </div>
+            <div class="input_row input_group">
+              <div class="form__item">
+                <label for="contact_face">Контактное лицо</label>
+                <input type="text" class="face __input" id="contact_face" />
+              </div>
+              <div class="form__item">
+                <label for="phone">Телефон</label>
+                <input type="text" class="tel __input" id="phone" />
+              </div>
+              <div class="form__item">
+                <label for="pos">Должность</label>
+                <input type="text" class="position __input" id="pos" />
+              </div>
+            </div>
+            <div class="add_button">
+              <button class="add">
+                <img src="img/icons/add.svg" alt="" />
+                <div class="add_title">Добавить контактное лицо</div>
+              </button>
+            </div>
+            <div class="input_row">
+              <div class="form__item cost">
+                <label for="cost">Стоимость работ</label>
+                <input type="text" class="__input" id="cost" />
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary main-btn" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+        </div>
+        <div class="forms__right">
+          <div class="history">
+            <h2 class="partner__title">История выполнения</h2>
+            <div class="item__wrapper">
+              <div class="item__title">
+                <p class="title_name">Дмитрий Ефремов создал заявку НАЗВАНИЕ ЗАЯВКИ</p>
+                <p class="title_date">13:40 09.02.21</p>
+              </div>
+              <div class="comment">
+                <p class="comment__title">Написать комментарий</p>
+                <div class="comment__item">
+                  <label class="comment_label" for="comment">Введите текст или вложите файл</label>
+                  <textarea class="comment_text" name="" id="comment"> </textarea>
+                  <div class="file__wrapper">
+                    <label for="file" class="file__label"><img src="img/icons/import.svg" alt="" class="file__icon"></label>
+                    <input class="file__input" type="file" multiple name="file" id="file" />
+                    <button class="btn btn-primary">Сохранить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="files">
+            <h2 class="files__title partner__title">Вложенные файлы</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
