@@ -14,89 +14,298 @@
     <title>document</title>
   </head>
   <body>
+    <!-- ///////////////////////// modal/////////////////////////////// -->
+
+    <div class="modal fade " id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="partner_modal modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content ">
+          <h5 class="modal-title" id="exampleModalLabel">Выбор партнёра</h5>
+          <div class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade " id="myModal2" tabindex="-1" aria-labelledby="myModal2Label" aria-hidden="true">
+      <div class="partner_modal modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content ">
+          <h5 class="modal-title" id="exampleModalLabel">Выбор обьекта</h5>
+          <div class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade " id="myModal3" tabindex="-1" aria-labelledby="myModal3Label" aria-hidden="true">
+      <div class="partner_modal modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content ">
+          <h3 class="modal-title" id="exampleModalLabel">Заведение партнера</h3>
+          <p class="modal-subtitle">Введите данные  ПАРТНЕРА И ОНИ СОХРАНЯТСЯ В ОБЩЕМ РЕЕСТРЕ ПАРТНЕРОВ, а на каждого менеджера будет создан аккаунт</p>
+          <div class="modal-body">
+            <div class="row">
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="name_partner">Название партнера</label>
+                <input type="text" class=" __input" id="name_partner" />
+              </div>
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="status_partner">Статус партнера</label>
+                <input type="text" class=" __input" id="status_partner" />
+              </div>
+            </div>
+             <div class="row">
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="city_partner">Город партнера</label>
+                <input type="text" class=" __input" id="city_partner" />
+              </div>
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="adress_partner">Адрес партнера</label>
+                <input type="text" class=" __input" id="adress_partner" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="number_partner">ИНН партнера</label>
+                <input type="text" class=" __input" id="number_partner" />
+              </div>
+            </div>
+            <div class="row row_modal">
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager">Менеджер №1</label>
+                <input type="text" class=" __input" id="manager" />
+              </div>
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager_phone">Телефон</label>
+                <input type="text" class=" __input" id="manager_phone" />
+              </div>
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager_mail">Почта</label>
+                <input type="text" class=" __input" id="manager_mail" />
+              </div>
+              <span class="cencel_modal col-lg-1">
+                <img src="img/icons/close.svg" alt="" class="cencel__modal" />
+              </span>
+              <div class="delete">
+                <img src="img/icons/close.svg" alt="" class="delete__modal" />
+                <p class="delete_title">удалить</p>
+              </div>
+            </div>
+            <div class="row row_modal">
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager">Менеджер №2</label>
+                <input type="text" class=" __input" id="manager" />
+              </div>
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager_phone">Телефон</label>
+                <input type="text" class=" __input" id="manager_phone" />
+              </div>
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager_mail">Почта</label>
+                <input type="text" class=" __input" id="manager_mail" />
+              </div>
+              <span class="cencel_modal col-lg-1">
+                <img src="img/icons/close.svg" alt="" class="cencel__modal" />
+              </span>
+              <div class="delete">
+                <img src="img/icons/close.svg" alt="" class="delete__modal" />
+                <p class="delete_title">удалить</p>
+              </div>
+            </div>
+            <div class="add_button">
+              <button class="add">
+                <img src="img/icons/add.svg" alt="" />
+                <div class="add_title">Добавить менеджера</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="modal fade " id="myModal4" tabindex="-1" aria-labelledby="myModal4Label" aria-hidden="true">
+      <div class="partner_modal modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content ">
+          <h3 class="modal-title" id="exampleModalLabel">Заведение партнера</h3>
+          <p class="modal-subtitle">Введите данные  ПАРТНЕРА И ОНИ СОХРАНЯТСЯ В ОБЩЕМ РЕЕСТРЕ ПАРТНЕРОВ, а на каждого менеджера будет создан аккаунт</p>
+          <div class="modal-body">
+            <div class="row">
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="name_partner">Название партнера</label>
+                <input type="text" class=" __input" id="name_partner" />
+              </div>
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="status_partner">Статус партнера</label>
+                <input type="text" class=" __input" id="status_partner" />
+              </div>
+            </div>
+             <div class="row">
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="city_partner">Город партнера</label>
+                <input type="text" class=" __input" id="city_partner" />
+              </div>
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="adress_partner">Адрес партнера</label>
+                <input type="text" class=" __input" id="adress_partner" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form__item col-12 col-lg-4">
+                <label class="label" for="number_partner">ИНН партнера</label>
+                <input type="text" class=" __input" id="number_partner" />
+              </div>
+            </div>
+            <div class="row row_modal">
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager">Менеджер №1</label>
+                <input type="text" class=" __input" id="manager" />
+              </div>
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager_phone">Телефон</label>
+                <input type="text" class=" __input" id="manager_phone" />
+              </div>
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager_mail">Почта</label>
+                <input type="text" class=" __input" id="manager_mail" />
+              </div>
+              <span class="cencel_modal col-lg-1">
+                <img src="img/icons/close.svg" alt="" class="cencel__modal" />
+              </span>
+              <div class="delete">
+                <img src="img/icons/close.svg" alt="" class="delete__modal" />
+                <p class="delete_title">удалить</p>
+              </div>
+            </div>
+            <div class="row row_modal">
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager">Менеджер №2</label>
+                <input type="text" class=" __input" id="manager" />
+              </div>
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager_phone">Телефон</label>
+                <input type="text" class=" __input" id="manager_phone" />
+              </div>
+              <div class="form__item col-12 col-lg-3">
+                <label class="label" for="manager_mail">Почта</label>
+                <input type="text" class=" __input" id="manager_mail" />
+              </div>
+              <span class="cencel_modal col-lg-1">
+                <img src="img/icons/close.svg" alt="" class="cencel__modal" />
+              </span>
+              <div class="delete">
+                <img src="img/icons/close.svg" alt="" class="delete__modal" />
+                <p class="delete_title">удалить</p>
+              </div>
+            </div>
+            <div class="add_button">
+              <button class="add">
+                <img src="img/icons/add.svg" alt="" />
+                <div class="add_title">Добавить менеджера</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////////////////////// end modal/////////////////////////////// -->
     <div class="page">
-      <h1 class="main__title h1">Создание заявки</h1>
-      <div class="form__container">
-        <div class="forms__left">
+      <h1 class="main__title h1 col-md-7 col-sm12">Создание заявки</h1>
+      <div class="form__container row">
+        <div class="forms__left col-12 col-lg-7 col-sm12">
           <div class="partner">
             <h2 class="partner__title">Партнер</h2>
             <div class="partner__buttons">
-              <button class="choose-partner btn btn-primary main-btn">ВЫБРАТЬ ПАРТНЕРА</button>
-              <button class="create-partner btn create-btn">+ СОЗДАТЬ</button>
+              <button class="choose-partner btn btn-primary main-btn col-12 col-sm-6" data-bs-toggle="modal" data-bs-target="#myModal">
+                ВЫБРАТЬ ПАРТНЕРА
+              </button>
+              <button class="create-partner btn create-btn col-12 col-sm-6" data-bs-toggle="modal" data-bs-target="#myModal3">+ СОЗДАТЬ</button>
             </div>
-            <form action="" class="partner__forms __forms">
-              <div class="form__item">
-                <label for="select">Выбранный партнер</label>
-                <input class="__input" type="text" name="" id="select" />
+            <div class="partner__forms __forms row">
+              <div class="form__item col-sm-12 col-lg-4">
+                <div class="label">Выбранный партнер</div>
+                <div class="__input" id="select_partner">ООО “Вес Сервис”</div>
               </div>
-              <div class="form__item">
-                <label for="city">Город партнера</label>
-                <input class="__input" type="text" name="" id="city" />
+
+              <div class="form__item col-sm-12 col-lg-4">
+                <div class="label">Город партнёра</div>
+                <div class="__input" id="city_partner">Казань</div>
               </div>
-              <div class="form__item">
-                <label for="status">Статус партнера</label>
-                <input class="__input" type="text" name="" id="status" />
+
+              <div class="form__item col-sm-12 col-lg-4">
+                <div class="label">Статус партнёра</div>
+                <div class="__input" id="status_partner">SILVER</div>
               </div>
               <div class="cencel">
                 <img src="img/icons/close.svg" alt="" class="cencel__btn" />
               </div>
-            </form>
+              <div class="delete">
+                <img src="img/icons/close.svg" alt="" class="delete__modal" />
+                <p class="delete_title">удалить</p>
+              </div>
+            </div>
             <div class="partner__cencel"></div>
           </div>
           <div class="object">
             <h2 class="object__title">Объект</h2>
             <div class="object__buttons">
-              <button class="choose-object btn btn-primary main-btn">ВЫБРАТЬ ОБЬЕКТ</button>
-              <button class="create-object btn create-btn">+ СОЗДАТЬ</button>
+              <button class="choose-object btn btn-primary main-btn col-12 col-sm-6"  data-bs-toggle="modal" data-bs-target="#myModal2">ВЫБРАТЬ ОБЬЕКТ</button>
+              <button class="create-object btn create-btn col-12 col-sm-6"  data-bs-toggle="modal" data-bs-target="#myModal4">+ СОЗДАТЬ</button>
             </div>
 
-            <form action="" class="object__forms __forms">
-              <div class="form__item">
-                <label for="name">Название объекта</label>
-                <input class="__input object__input" type="text" name="" id="name" />
+            <div class="object__forms __forms row">
+              <div class="form__item col-md-12 col-lg-3">
+                <div class="label">Название объекта</div>
+                <div class="__input object__input" id="name_object">Перекресток</div>
               </div>
-              <div class="form__item">
-                <label for="adress">Адрес объекта</label>
-                <input class="__input object__input" type="text" name="" id="adress" />
+              <div class="form__item col-md-12 col-lg-3">
+                <div class="label">Адрес объекта</div>
+                <div class="__input object__input" id="adress_object">Казань, ул. Маршака, 6</div>
               </div>
-              <div class="form__item">
-                <label for="number">ИНН объекта</label>
-                <input class="__input object__input" type="text" name="" id="number" />
+              <div class="form__item col-md-12 col-lg-3">
+                <div class="label">ИНН обьекта</div>
+                <div class="__input object__input" id="number_object">7786543679</div>
               </div>
-              <div class="form__item">
-                <label for="time">Время работы</label>
-                <input class="__input object__input" type="text" name="" id="time" />
+              <div class="form__item col-md-12 col-lg-3">
+                <div class="label">Время работы</div>
+                <div class="__input object__input" id="time_object">08:00 - 23:00</div>
               </div>
               <div class="cencel">
                 <img src="img/icons/close.svg" alt="" class="cencel__btn" />
               </div>
-            </form>
-            <form action="" class="object__forms __forms">
-              <div class="form__item">
-                <label for="dir">Директор</label>
-                <input class="__input object__input _dir" type="text" name="" id="dir" />
+              <div class="delete">
+                <img src="img/icons/close.svg" alt="" class="delete__modal" />
+                <p class="delete_title">удалить</p>
               </div>
-            </form>
-            <form action="" class="object__forms __forms">
-              <div class="form__item">
-                <label for="face">Контактное лицо</label>
-                <input class="__input object__input" type="text" name="" id="face" />
+            </div>
+            <div class="object__forms __forms row">
+              <div class="form__item col-md-12 col-lg-6">
+                <div class="label">Директор</div>
+                <div class="__input object__input _dir" type="text" name="" id="dir">Никулин Сергей Викторович</div>
               </div>
-              <div class="form__item">
-                <label for="tel">Телефон</label>
-                <input class="__input object__input" type="text" name="" id="tel" />
+            </div>
+            <div class="object__forms __forms row">
+              <div class="form__item col-md-12 col-lg-4">
+                <div class="label">Контактное лицо</div>
+                <div class="__input object__input _dir" id="contact_face">Никулин Сергей Викторович</div>
               </div>
-              <div class="form__item">
-                <label for="position">Должность</label>
-                <input class="__input object__input" type="text" name="" id="position" />
+              <div class="form__item col-md-12 col-lg-4">
+                <div class="label">Телефон</div>
+                <div class="__input object__input _dir" id="tel">+7 (999) 999-88-77</div>
               </div>
-            </form>
+              <div class="form__item col-md-12 col-lg-4">
+                <div class="label">Должность</div>
+                <div class="__input object__input _dir" id="tel">Менеджер магазина</div>
+              </div>
+            </div>
           </div>
           <div class="discription">
             <h2 class="partner__title">Описание заявки</h2>
-            <div class="input_row">
-              <div class="form__item">
-                <label for="type">Тип заявки</label>
+            <div class="row">
+              <div class="form__item col-md-12 col-lg-6">
+                <label class="label" for="type">Тип заявки</label>
                 <select class="form-select __input" aria-label="Тип заявки" id="type">
                   <option selected>Выберите тип заявки</option>
                   <option value="1">Первая</option>
@@ -105,39 +314,39 @@
                 </select>
               </div>
             </div>
-            <div class="input_row">
-              <div class="form__item start">
-                <label for="start">Дата</label>
+            <div class="row">
+              <div class="form__item start col-md-12 col-lg-6">
+                <label class="label" for="start">Дата</label>
                 <input class="date __input" type="date" name="" id="start" value="2021-03-22" min="2021-01-01" max="2070-12-31" />
               </div>
-              <div class="form__item end">
-                <label for="end">Срок окончания</label>
+              <div class="form__item end col-md-12 col-lg-6">
+                <label class="label" for="end">Срок окончания</label>
                 <input class="date __input" type="date" name="" id="end" value="2021-03-22" min="2021-01-01" max="2070-12-31" />
               </div>
             </div>
-            <div class="input_row">
-              <div class="form__item adress">
-                <label for="obj_adress">Адрес объекта</label>
+            <div class="row">
+              <div class="form__item adress col-lg-12">
+                <label class="label" for="obj_adress">Адрес объекта</label>
                 <input type="text" class="obj__adress __input" id="obj_adress" />
               </div>
             </div>
-            <div class="input_row">
-              <div class="form__item theme">
-                <label for="theme">тема</label>
+            <div class="row">
+              <div class="form__item theme col-lg-12">
+                <label class="label" for="theme">тема</label>
                 <input type="text" class="theme __input" id="theme" />
               </div>
             </div>
-            <div class="input_row input_group">
-              <div class="form__item">
-                <label for="contact_face">Контактное лицо</label>
+            <div class="row input_group">
+              <div class="form__item col-md-12 col-lg-4">
+                <label class="label" for="contact_face">Контактное лицо</label>
                 <input type="text" class="face __input" id="contact_face" />
               </div>
-              <div class="form__item">
-                <label for="phone">Телефон</label>
+              <div class="form__item col-md-12 col-lg-4">
+                <label class="label" for="phone">Телефон</label>
                 <input type="text" class="tel __input" id="phone" />
               </div>
-              <div class="form__item">
-                <label for="pos">Должность</label>
+              <div class="form__item col-md-12 col-lg-4">
+                <label class="label" for="pos">Должность</label>
                 <input type="text" class="position __input" id="pos" />
               </div>
             </div>
@@ -147,16 +356,16 @@
                 <div class="add_title">Добавить контактное лицо</div>
               </button>
             </div>
-            <div class="input_row">
-              <div class="form__item cost">
-                <label for="cost">Стоимость работ</label>
+            <div class="row">
+              <div class="form__item cost col-lg-6">
+                <label class="label" for="cost">Стоимость работ</label>
                 <input type="text" class="__input" id="cost" />
               </div>
             </div>
           </div>
           <button class="btn btn-primary main-btn" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
         </div>
-        <div class="forms__right">
+        <div class="forms__right col-12 col-lg-5 col-sm12">
           <div class="history">
             <h2 class="partner__title">История выполнения</h2>
             <div class="item__wrapper">
@@ -166,15 +375,15 @@
               </div>
               <div class="comment">
                 <p class="comment__title">Написать комментарий</p>
-                <div class="comment__item">
-                  <label class="comment_label" for="comment">Введите текст или вложите файл</label>
-                  <textarea class="comment_text" name="" id="comment"> </textarea>
+                <form action="" class="comment__item">
+                  <p class="comment_label" for="comment">Введите текст или вложите файл</p>
+                  <textarea class="comment_text" name="" placeholder="Введите текст или вложите файл " id="comment"> </textarea>
                   <div class="file__wrapper">
-                    <label for="file" class="file__label"><img src="img/icons/import.svg" alt="" class="file__icon"></label>
+                    <label for="file" class="file__label"><img src="img/icons/import.svg" alt="" class="file__icon" /></label>
                     <input class="file__input" type="file" multiple name="file" id="file" />
-                    <button class="btn btn-primary">Сохранить</button>
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
