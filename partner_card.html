@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>partner_card</title>
+  </head>
+  <body>
+    <div class="page card__page">
+      <h1 class="main__title">Карточка партнера</h1>
+      <div class="form__container row">
+        <div class="forms__left col-12 col-lg-7 col-sm12">
+          <div class="row">
+            <div class="form__item col-12 col-lg-4">
+              <label class="label" for="name_partner">Название партнера</label>
+              <input type="text" class="__input" id="name_partner" />
+            </div>
+            <div class="form__item col-12 col-lg-4">
+              <label class="label" for="status_partner">Статус партнера</label>
+              <input type="text" class="__input" id="status_partner" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form__item col-12 col-lg-4">
+              <label class="label" for="city_partner">Город партнера</label>
+              <input type="text" class="__input" id="city_partner" />
+            </div>
+            <div class="form__item col-12 col-lg-4">
+              <label class="label" for="adress_partner">Адрес партнера</label>
+              <input type="text" class="__input" id="adress_partner" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form__item col-12 col-lg-4">
+              <label class="label" for="number_partner">ИНН партнера</label>
+              <input type="text" class="__input" id="number_partner" />
+            </div>
+          </div>
+          <div class="row row_modal">
+            <div class="form__item col-12 col-lg-3">
+              <label class="label" for="manager">Менеджер №1</label>
+              <input type="text" class="__input" id="manager" />
+            </div>
+            <div class="form__item col-12 col-lg-3">
+              <label class="label" for="manager_phone">Телефон</label>
+              <input type="text" class="__input" id="manager_phone" />
+            </div>
+            <div class="form__item col-12 col-lg-3">
+              <label class="label" for="manager_mail">Почта</label>
+              <input type="text" class="__input" id="manager_mail" />
+            </div>
+            <span class="cencel_modal col-lg-1">
+              <img src="img/icons/close.svg" alt="" class="cencel__modal" />
+            </span>
+            <div class="delete">
+              <img src="img/icons/close.svg" alt="" class="delete__modal" />
+              <p class="delete_title">удалить</p>
+            </div>
+          </div>
+          <div class="row row_modal">
+            <div class="form__item col-12 col-lg-3">
+              <label class="label" for="manager">Менеджер №2</label>
+              <input type="text" class="__input" id="manager" />
+            </div>
+            <div class="form__item col-12 col-lg-3">
+              <label class="label" for="manager_phone">Телефон</label>
+              <input type="text" class="__input" id="manager_phone" />
+            </div>
+            <div class="form__item col-12 col-lg-3">
+              <label class="label" for="manager_mail">Почта</label>
+              <input type="text" class="__input" id="manager_mail" />
+            </div>
+            <span class="cencel_modal col-lg-1">
+              <img src="img/icons/close.svg" alt="" class="cencel__modal" />
+            </span>
+            <div class="delete">
+              <img src="img/icons/close.svg" alt="" class="delete__modal" />
+              <p class="delete_title">удалить</p>
+            </div>
+          </div>
+          <div class="add_button">
+            <button class="add">
+              <img src="img/icons/add.svg" alt="" />
+              <div class="add_title">Добавить менеджера</div>
+            </button>
+          </div>
+          <div class="row">
+            <div class="form__item col-12 col-lg-9">
+              <div class="label" for="manager">Комментарий</div>
+              <textarea type="text" class="__input modal__comment" id="manager"></textarea>
+            </div>
+          </div>
+          <button class="create-btn modal_create-btn">СОХРАНИТЬ</button>
+          <div class="files added-files partner_files">
+            <h2 class="files__title partner__title">Вложенные файлы</h2>
+            <div class="files-items">
+              <div class="file-item">
+                <img src="img/icons/excel.png" alt="" class="file-icon" />
+                <p class="file-title">НАЗВАНИЕ ФАЙЛА С ССЫЛКОЙ НА НЕГО</p>
+              </div>
+              <div class="file-item">
+                <img src="img/icons/word.png" alt="" class="file-icon" />
+                <p class="file-title">НАЗВАНИЕ ФАЙЛА С ССЫЛКОЙ НА НЕГО</p>
+              </div>
+              <div class="file-item">
+                <img src="img/icons/excel.png" alt="" class="file-icon" />
+                <p class="file-title">НАЗВАНИЕ ФАЙЛА С ССЫЛКОЙ НА НЕГО</p>
+              </div>
+              <div class="file-item">
+                <img src="img/icons/word.png" alt="" class="file-icon" />
+                <p class="file-title">НАЗВАНИЕ ФАЙЛА С ССЫЛКОЙ НА НЕГО</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__subtitle">
+            <h3 class="card_title">Принадлежность к группе филиалов</h3>
+            <p class="card_text">При необходимости вы можете назначить данному партнеру принадлежность к группе филиалов</p>
+          </div>
+          <div class="partner_select row col-12">
+            <select class="form-select __input  col-12 col-md-4 " aria-label="Тип заявки" id="type">
+              <option selected>Выбрать группу</option>
+              <option value="1">Название группы филиалов 0</option>
+              <option value="2">Название группы филиалов 1</option>
+              <option value="3">Название группы филиалов 2</option>
+              <option value="4">Название группы филиалов 3</option>
+            </select>
+            <div class="form_value col-12 col-md-4 col-lg-4">
+              <img src="img/icons/check.svg" alt="" class="check" />
+              <p class="group_name">Название группы филиалов 1</p>
+              <span class="cencel_modal ">
+                <img src="img/icons/close.svg" alt="" class="cencel_partner" />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="forms__right col-12 col-lg-5 col-sm12">
+          <div class="history card__history">
+            <h2 class="card__history__title">История взаимодействий с объектом</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Дата</th>
+                  <th scope="col">№ заявки</th>
+                  <th scope="col">Статус</th>
+                  <th scope="col">Обьект</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">../../..</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">../../..</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">../../..</th>
+                  <td colspan="2"></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__footer"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
