@@ -11,7 +11,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>partner_card</title>
+    <title>Карточка партнера</title>
   </head>
   <body>
     <div class="page card__page">
@@ -124,18 +124,20 @@
             <h3 class="card_title">Принадлежность к группе филиалов</h3>
             <p class="card_text">При необходимости вы можете назначить данному партнеру принадлежность к группе филиалов</p>
           </div>
-          <div class="partner_select row col-12">
-            <select class="form-select __input  col-12 col-md-4 " aria-label="Тип заявки" id="type">
-              <option selected>Выбрать группу</option>
-              <option value="1">Название группы филиалов 0</option>
-              <option value="2">Название группы филиалов 1</option>
-              <option value="3">Название группы филиалов 2</option>
-              <option value="4">Название группы филиалов 3</option>
-            </select>
-            <div class="form_value col-12 col-md-4 col-lg-4">
+          <div class="partner_select row col-12 col-lg-12">
+            <div class="select_wrapper col-12 col-md-12 col-lg-6">
+              <select class="form-select __input " id="group">
+                <option selected>Выбрать группу</option>
+                <option value="1">Название группы филиалов 0</option>
+                <option value="2">Название группы филиалов 1</option>
+                <option value="3">Название группы филиалов 2</option>
+                <option value="4">Название группы филиалов 3</option>
+              </select>
+            </div>
+            <div class="form_value col-12 col-md-12 col-lg-6">
               <img src="img/icons/check.svg" alt="" class="check" />
               <p class="group_name">Название группы филиалов 1</p>
-              <span class="cencel_modal ">
+              <span class="cencel_modal">
                 <img src="img/icons/close.svg" alt="" class="cencel_partner" />
               </span>
             </div>
