@@ -11,7 +11,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>document</title>
+    <title>Сервисная панель</title>
   </head>
   <body>
     <!-- ///////////////////////// modal/////////////////////////////// -->
@@ -119,47 +119,60 @@
                 <div class="add_title">Добавить менеджера</div>
               </button>
             </div>
+            <div class="row">
+              <div class="form__item col-12 col-lg-9 ">
+                <div class="label" for="manager">Комментарий</div>
+                <textarea type="text" class=" __input modal__comment" id="manager"></textarea>
+              </div>
+            </div>
+            <button class="create-btn modal_create-btn">СОХРАНИТЬ</button>
           </div>
         </div>
       </div>
     </div>
 
 
-      <div class="modal fade " id="myModal4" tabindex="-1" aria-labelledby="myModal4Label" aria-hidden="true">
+    <div class="modal fade " id="myModal4" tabindex="-1" aria-labelledby="myModal4Label" aria-hidden="true">
       <div class="partner_modal modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content ">
-          <h3 class="modal-title" id="exampleModalLabel">Заведение партнера</h3>
+          <h3 class="modal-title" id="exampleModalLabel">Заведение обьекта</h3>
           <p class="modal-subtitle">Введите данные  ПАРТНЕРА И ОНИ СОХРАНЯТСЯ В ОБЩЕМ РЕЕСТРЕ ПАРТНЕРОВ, а на каждого менеджера будет создан аккаунт</p>
           <div class="modal-body">
-            <div class="row">
-              <div class="form__item col-12 col-lg-4">
-                <label class="label" for="name_partner">Название партнера</label>
-                <input type="text" class=" __input" id="name_partner" />
+           <div class="object__forms __forms row">
+              <div class="form__item col-md-12 col-lg-3">
+                <label class="label">Название объекта</label>
+                <input class="__input object__input" id="name_object">
               </div>
-              <div class="form__item col-12 col-lg-4">
-                <label class="label" for="status_partner">Статус партнера</label>
-                <input type="text" class=" __input" id="status_partner" />
+              <div class="form__item col-md-12 col-lg-3">
+                <label class="label">Адрес объекта</label>
+                <input class="__input object__input" id="adress_object">
+              </div>
+              <div class="form__item col-md-12 col-lg-3">
+                <label class="label">ИНН обьекта</label>
+                <input class="__input object__input" id="number_object">
+              </div>
+              <div class="form__item col-md-12 col-lg-3">
+                <label class="label">Время работы</label>
+                <input class="__input object__input" id="time_object">
+              </div>
+              <div class="cencel">
+                <img src="img/icons/close.svg" alt="" class="cencel__btn" />
+              </div>
+              <div class="delete">
+                <img src="img/icons/close.svg" alt="" class="delete__modal" />
+                <p class="delete_title">удалить</p>
               </div>
             </div>
-             <div class="row">
-              <div class="form__item col-12 col-lg-4">
-                <label class="label" for="city_partner">Город партнера</label>
-                <input type="text" class=" __input" id="city_partner" />
-              </div>
-              <div class="form__item col-12 col-lg-4">
-                <label class="label" for="adress_partner">Адрес партнера</label>
-                <input type="text" class=" __input" id="adress_partner" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="form__item col-12 col-lg-4">
-                <label class="label" for="number_partner">ИНН партнера</label>
-                <input type="text" class=" __input" id="number_partner" />
+            <div class="object__forms __forms row">
+              <div class="form__item col-md-12 col-lg-6">
+                <label class="label">Директор</label>
+                <input class="__input object__input _dir" type="text" name="" id="dir">
+              </input>
               </div>
             </div>
             <div class="row row_modal">
               <div class="form__item col-12 col-lg-3">
-                <label class="label" for="manager">Менеджер №1</label>
+                <label class="label" for="manager">Контактное лицо</label>
                 <input type="text" class=" __input" id="manager" />
               </div>
               <div class="form__item col-12 col-lg-3">
@@ -167,8 +180,8 @@
                 <input type="text" class=" __input" id="manager_phone" />
               </div>
               <div class="form__item col-12 col-lg-3">
-                <label class="label" for="manager_mail">Почта</label>
-                <input type="text" class=" __input" id="manager_mail" />
+                <label class="label" for="position">Должность</label>
+                <input type="text" class=" __input" id="position" />
               </div>
               <span class="cencel_modal col-lg-1">
                 <img src="img/icons/close.svg" alt="" class="cencel__modal" />
@@ -180,7 +193,7 @@
             </div>
             <div class="row row_modal">
               <div class="form__item col-12 col-lg-3">
-                <label class="label" for="manager">Менеджер №2</label>
+                <label class="label" for="manager">Контактное лицо</label>
                 <input type="text" class=" __input" id="manager" />
               </div>
               <div class="form__item col-12 col-lg-3">
@@ -188,8 +201,8 @@
                 <input type="text" class=" __input" id="manager_phone" />
               </div>
               <div class="form__item col-12 col-lg-3">
-                <label class="label" for="manager_mail">Почта</label>
-                <input type="text" class=" __input" id="manager_mail" />
+                <label class="label" for="position">Должность</label>
+                <input type="text" class=" __input" id="position" />
               </div>
               <span class="cencel_modal col-lg-1">
                 <img src="img/icons/close.svg" alt="" class="cencel__modal" />
@@ -202,13 +215,33 @@
             <div class="add_button">
               <button class="add">
                 <img src="img/icons/add.svg" alt="" />
-                <div class="add_title">Добавить менеджера</div>
+                <div class="add_title">Добавить контактное лицо</div>
               </button>
             </div>
+            <div class="row">
+              <div class="form__item col-12 col-lg-9 ">
+                <div class="label" for="manager">Комментарий</div>
+                <textarea type="text" class=" __input modal__comment" id="manager"></textarea>
+              </div>
+            </div>
+
+            <div class="form-check form-switch">
+              <label class="form-check-label" for="flexSwitchCheckChecked">Распределительный центр</label>
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+             </div>
+
+            <div class="row">
+              <div class="form__item col-12 col-lg-9 ">
+                <div class="label" for="manager">Комментарий</div>
+                <textarea type="text" class=" __input modal__comment" id="manager"></textarea>
+              </div>
+            </div>
+            <button class="create-btn modal_create-btn">СОХРАНИТЬ</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
     <!-- ///////////////////////// end modal/////////////////////////////// -->
     <div class="page">
@@ -369,10 +402,26 @@
           <div class="history">
             <h2 class="partner__title">История выполнения</h2>
             <div class="item__wrapper">
-              <div class="item__title">
-                <p class="title_name">Дмитрий Ефремов создал заявку НАЗВАНИЕ ЗАЯВКИ</p>
-                <p class="title_date">13:40 09.02.21</p>
-              </div>
+             
+
+              <table class="table table-hover history_table">
+                <tbody>
+                  <tr>
+                    <td class="col1"></td>
+                    <td class="col2"></td>
+                  </tr>
+                  <tr>
+                    <td class="col1"></td>
+                    <td class="col2"></td>
+                  </tr>
+                  <tr>
+                    <td class="col1"></td>
+                    <td class="col2"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+
               <div class="comment">
                 <p class="comment__title">Написать комментарий</p>
                 <form action="" class="comment__item">
