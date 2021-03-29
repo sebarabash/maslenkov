@@ -35,7 +35,7 @@ dd {
 
 body,
 html {
-  width: 100vw;
+  width: 100%;
   height: auto;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -226,7 +226,7 @@ body {
 @media (max-width: 769px) {
   .delete {
     width: 120px;
-    margin-top: -20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -255,6 +255,7 @@ body {
 .page {
   width: 90%;
   margin: 0 auto;
+  padding: 15px;
 }
 
 .form__container {
@@ -474,6 +475,14 @@ body {
   .history {
     padding: 10px;
   }
+}
+
+.history_table {
+  width: 100%;
+}
+
+.col2 {
+  width: 20%;
 }
 
 .item__wrapper {
@@ -768,11 +777,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .partner_select {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+}
+
+.select_wrapper {
+  margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+  .select_wrapper {
+    margin-bottom: 20px;
+  }
 }
 
 .form-select {
-  width: 50%;
+  width: 100%;
   margin: 0px 0px 0px 0px;
+}
+
+.group_name {
+  font-size: 14px;
 }
 
 .form_value {
